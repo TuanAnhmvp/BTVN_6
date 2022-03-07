@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Manage_Folder.Activity_Mngfolder">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbar_addfolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Thêm thư mục"
+            android:textColor="#111111"
+            android:textSize="19dp"
+            />
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:textSize="17dp"
+            android:textColor="#007AFF"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:textSize="17dp"
+            android:textColor="#007AFF"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/edt_name_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbar_addfolder"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_namefolder"
+        android:hint="Nhập tên thư mục"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:paddingEnd="200dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edt_dscp_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_below="@id/edt_name_folder"
+        android:layout_alignStart="@id/edt_name_folder"
+        android:layout_alignEnd="@id/edt_name_folder"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/shape_namefolder"
+        android:hint="Nhập mô tả thư mục"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+
+        android:paddingBottom="100dp"
+        android:textSize="20sp" />
+
+  </RelativeLayout>
